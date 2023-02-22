@@ -28,8 +28,7 @@ echo "<br>";
      echo "<br>";
 }
 
-
-
+// 'or '1' = '1 
 //$password = $_POST['password']; sin el ISSET
 //$ = isset($_POST[' ']) ? $_POST[' '] : '' ;
 ?>
