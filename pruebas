@@ -1,0 +1,1 @@
+$cs = $con ->  query ("INSERT INTO login(usuario, password) VALUES ('$usuario', '$password')");
