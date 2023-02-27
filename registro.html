@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Formulario</title>
+</head>
+
+<style>
+    .site-header {
+        background-color: black;
+        padding: 9rem 0 9rem 0;
+
+    }
+
+    .site-header h1 {
+        color: white;
+        text-align: center;
+    }
+
+
+
+
+
+    /*FOOTER*/
+    .site-footer {
+        background-color: black;
+        padding: 2.5rem 0 2.5rem 0;
+    }
+
+    .site-footer p {
+        color: white;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+
+    .copyright {
+        margin: 0;
+        color: white;
+    }
+
+   
+
+</style>
+
+<header class="site-header">
+    <h1>¡Bienvenido al Registro de Usuarios de Tuvsa!</h1>
+</header>
+
+
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-md-4 mt-5"></div>
+            <div class="col-md-4 mt-5">
+
+                
+                <form action="registro.php" method="POST">
+          
+
+                        <div class="mb-3">
+                            <label class="form-label ">Crea tu nombre de usuario:</label>
+                            <input type="text " class="form-control " name="usuario" />
+
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Crea una Contraseña:</label>
+                            <input type="password" class="form-control " name="password">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrar al Usuario</button>
+                        <a href="/CIBERDRAGONES/formulario.html" class="btn btn-primary">Volver al Inicio</a>
+
+                </form>
+            </div>
+
+            <div class="col-md-4 mt-5"></div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+    <div>
+        <p class="copyright">Todos los derechos reservados a Tuvsa S.A. de C.V. &copy; </p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

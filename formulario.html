@@ -1,34 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Formulario</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Formulario</title>
 </head>
-<body>
-    <div class="container-fluid">
-    <div class="row mb-5">
-    <div class="col-md-4 mt-5"></div>
-    <div class="col-md-4 mt-5">
-    <form action="Larespuesta.php" method="POST">
-        <div class="mb-3">
-          <label class="form-label">Usuario</label>
-          <input type="text" class="form-control" name="usuario"/>
-          <div class="form-text">Usuario:</div>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Password</label>
-          <input type="password" class="form-control" name="password">
-          <div class="form-text">Password:</div>
-        </div>
-        <button type="submit" class="btn btn-primary">Inicio</button>
-      </form>
-    </div>
-    <div class="col-md-4 mt-5"></div>
-</div>
-</div>
-    
+
+
+
+
+<style>
+ 
+  .site-header {
+     background-color: black;
+     padding: 9rem 0 9rem 0;
+ 
+ }
+ .site-header h1 {
+     color: white;
+     text-align: center;
+ }
+ 
+ 
+ 
+ 
+ 
+ /*FOOTER*/
+ .site-footer {
+     background-color: black; 
+     padding: 2.5rem 0 2.5rem 0;
+ }
+ .site-footer p {
+ color: white;
+ text-align: left;
+ padding-left: 5%;
+ }
+ 
+ 
+ .copyright {
+     margin: 0;
+     color: white;
+ }
+ 
+ 
+ 
+ 
+ 
+ </style>
+ 
+ <header class="site-header">
+    <h1>¡Bienvenido al Sistema de Tuvsa Ingresa tu usuario y contraseña para Ingresar!</h1>
+ </header>
+ 
+
+
+
+
+
+
+
+
+
+ <body>
+  <div class="container-fluid">
+      <div class="row mb-5">
+          <div class="col-md-4 mt-5"></div>
+
+          <div class="col-md-4 mt-5">
+              <legend>
+                  <form action="Larespuesta.php" method="POST">
+                      <div class="mb-3">
+                          <label class="form-label">Ingresa tu Nombre de usuario:</label>
+                          <input type="text" class="form-control" name="usuario" />
+
+                      </div>
+                      <div class="mb-3">
+                          <label class="form-label">Ingresa tu Contraseña:</label>
+                          <input type="password" class="form-control" name="password">
+
+                      </div>
+                      <button type="submit" class="btn btn-primary">Inicio Al Sistema</button>
+                      <a href="/CIBERDRAGONES/registro.html" class="btn btn-primary">Registrar</a>
+                  </form>
+              </legend>
+          </div>
+
+          <div class="col-md-4 mt-5"></div>
+      </div>
+  </div>
+
 </body>
+
+
+
+
+
+
+<footer class="site-footer">
+  <div>
+      <p class="copyright">Todos los derechos reservados a Tuvsa S.A. de C.V. &copy; </p>
+  </div>
+</footer>
+
+
+
+
+
+
 </html>

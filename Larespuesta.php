@@ -2,6 +2,7 @@
 error_reporting(E_ALL ^ E_DEPRECATED);
 header("content-Type: text/html; charset=UTF-8");
 
+
 $usuario = isset($_POST['usuario']) ?  $_POST['usuario']: '' ;
 $password = isset($_POST['password']) ?  $_POST['password']: '' ;
 $usuarioTabla = '';
@@ -20,6 +21,7 @@ if ($usuario == $usuarioTabla){
     if ($password == $passwordTabla){
 echo 'USUARIO CORRECTO';
 echo "<br>";
+header("Location: /CIBERDRAGONES/index.php");
     }
 
 } else {

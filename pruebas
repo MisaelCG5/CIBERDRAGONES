@@ -1,1 +1,69 @@
 $cs = $con ->  query ("INSERT INTO login(usuario, password) VALUES ('$usuario', '$password')");
+
+
+// PARTE DE REGISTRO
+<body>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-md-4 mt-5"></div>
+
+            <div class="col-md-4 mt-5">
+                <legend>
+                    <form action="registro.php" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label">Crea tu nombre de usuario:</label>
+                            <input type="text" class="form-control" name="usuario" />
+
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Crea una Contraseña:</label>
+                            <input type="password" class="form-control" name="password">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                        <a href="/CIBERDRAGONES/formulario.html" class="btn btn-primary">Volver al Inicio</a>
+
+                    </form>
+                </legend>
+            </div>
+
+            <div class="col-md-4 mt-5"></div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+/* PARTE DE FORMULARIO */
+
+<body>
+    <div class="container-fluid">
+      <div class="row mb-5">
+        <div class="col-md-4 mt-5"></div>
+        <div class="col-md-4 mt-5">
+          <form action="Larespuesta.php" method="POST">
+            <div class="mb-3">
+              <label class="form-label">Ingresa tu Usuario</label>
+              <input type="text" class="form-control" name="usuario"  />
+            
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Ingresa tu Password</label>
+              <input type="password" class="form-control" name="password" >
+            
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            
+            <a href="/CIBERDRAGONES/registro.html" class="btn btn-primary">Registrar</a>
+  
+          </form>
+        </div>
+  
+        <div class="col-md-4 mt-5"></div>
+      </div>
+    </div>
+  
+  </body>
+  
